@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YELI - Insurance</title>
+</head>
+<body>
+
+    <div id="header">
+       
+        
+        <div id="YELI">
+            <img src="../YELI-Insurence/bilder/YELILogo.png">
+        </div>
+
+        <div class="menuButton">
+            <input type="image" src="../YELI-Insurence/bilder/menu.png" onclick="toggleMenu()">
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="grid-container">
+            <div class="grid-T1"><b> Willkommen in der Zukunft des Reisens! Entdecken Sie die aufregende Welt des Weltraumtourismus mit unserer speziell zugeschnittenen Versicherung. </b></div>
+            <div class="grid-pic"><img id="Pic" src="../YELI-Insurence/bilder/astronout.png"></div>
+          </div>
+
+
+      
+        
+        <div id ="T3">
+            <span id="unterschrift"> YELI - Insurance</span><br><b>Unsere Space Tourismus Versicherung bietet umfassenden Schutz für Weltraumreisende und Unternehmen, um Risiken während ihrer Missionen zu minimieren und finanzielle Sicherheit zu gewährleisten.</b>
+        </div>
+    </div>
+    <a href="../YELI-Insurence/service.html">Service</a>
+
+    <!-- Hier fügst du das Menü ein -->
+    <div id="menu" class="menu">
+        <ul>
+            <li><a href="#">Startseite</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <!-- Füge hier weitere Menüpunkte hinzu -->
+        </ul>
+    </div>
+
+    
+</body>
+</html>
+<script>
+        const menu = document.getElementById('menu');
+        let menuIsOpen = false;
+
+        function toggleMenu() {
+            if (menuIsOpen) {
+                menu.classList.add("opened");
+            } else {
+                menu.classList.remove("opened")
+            }
+            menuIsOpen = !menuIsOpen;
+            console.log("Menu opened: " + menuIsOpen);
+        }
+    </script>
